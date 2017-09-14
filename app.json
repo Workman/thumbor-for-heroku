@@ -1,0 +1,18 @@
+{
+  "name": "Thumbor for Heroku",
+  "description": "An unofficial one-click Heroku install of Thumbor with WebP support. Based on gesteves/heroku-thumbor.",
+  "keywords": [
+    "thumbor",
+    "images",
+    "webp"
+  ],
+  "website": "https://github.com/thumbor/thumbor/wiki",
+  "repository": "https://github.com/Workman/thumbor-for-heroku",
+  "env": {
+    "BUILDPACK_URL": "heroku/python",
+    "THUMBOR_SECURITY_KEY": {
+      "description": "A secret key to prevent URL tampering.",
+      "generator": "secret"
+    }
+  }
+
